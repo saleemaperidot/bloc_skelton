@@ -19,7 +19,9 @@ class DownloadRepository implements IdownloadService {
       //  return right(response.data);
 
       if (response.statusCode == 200 || response.statusCode == 201) {
-        final downloadImageList = (response.data['results'] as List)
+        print("1111111111111111111111111111111");
+        print(response.data['data']['banners']);
+        final downloadImageList = (response.data['data']['banners'] as List)
             .map((e) => DataModel.fromJson(e))
             .toList();
         //final List<downloadModel> downloadImageList = [];

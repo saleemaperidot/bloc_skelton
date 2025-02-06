@@ -1,6 +1,6 @@
-import 'package:bloc/bloc.dart';
 import 'package:bloc_skel/data_service.dart';
 import 'package:bloc_skel/model/data_model/data_model.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 part 'getdata_event.dart';
